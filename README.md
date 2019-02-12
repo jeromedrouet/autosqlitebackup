@@ -1,5 +1,5 @@
-# autosqlitebackup
-automysqlbackup fork for SQLite backups
+# AutoSQLiteBackup
+AutoMySQLBackup fork for SQLite backups
 
 automated daily backup for SQLite databases :
  - monthly backup (no cleanup)
@@ -35,4 +35,4 @@ for instance DBNAMES for Daily/Weekly Backup e.g. "fancyname1:/var/lib/myapp/dat
 
 absolutely none
 
-this should send you an email when backup fails **but** since sqlite3 seems to always return 0 you probably won't have any
+this should send you an email when backup fails **but** since sqlite3 seems to always return 0 and does not generate errors on stderr (even in case of error :p) you probably won't have any
